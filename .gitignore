@@ -1,0 +1,13 @@
+/.vscode
+/avrdemo.hex
+/avrdemo.map
+/bin
+/IO_Macros.h
+/keypad.c
+/keypad.h
+/keypad_settings.h
+/main copy.c
+/max72xx.c
+/max72xx.h
+/tetris.c
+/tetris.h
