@@ -151,6 +151,6 @@ int main()
       count++;
     }
   }
-  printf("Sum %d\n", sum);
+  //printf("Sum %d\n", sum);
   return 0;
 }
