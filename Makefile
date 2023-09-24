@@ -11,7 +11,7 @@ LDFLAGS=-mmcu=$(MCU)
 PORT=\\\\.\\COM3
 BIN=avrdemo
 OUT=${BIN}.hex
-SOURCES = uart.c keypad.c
+SOURCES = uart.c keypad.c main.c
 
 DEBUG?=1
 
