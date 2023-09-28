@@ -9,7 +9,7 @@ CFLAGS=-Wall -Wextra  -Wundef -pedantic \
 		-Os -std=gnu99 -DF_CPU=16000000UL -mmcu=${MCU} -DBAUD=19200
 LDFLAGS=-mmcu=$(MCU)
 PORT=\\\\.\\COM3
-BIN=avrdemo
+BIN=keypad
 OUT=${BIN}.hex
 SOURCES = uart.c keypad.c main.c
 
@@ -49,6 +49,7 @@ isp: ${BIN}.hex
 
 clean:
 	del "$(OUT)"  *.map *.P *.d
+	del "$(OUTPUTDIR)\*.o" "$(OUTPUTDIR)\*.elf" "$(OUTPUTDIR)\*.hex" "$(OUTPUTDIR)\*.lss" "$(OUTPUTDIR)\*.map" "$(OUTPUTDIR)\*.P" "$(OUTPUTDIR)\*.d"
 
 $(OUTPUTDIR): 
 	@mkdir "$(OUTPUTDIR)"

@@ -11,13 +11,13 @@ int main()
 {
   init_serial();
   keypadInit();
-
+  printf("Press a key\n");
   char ch = 'X';
   uint8_t count = 0, sum = 0;
   while (count < 4)
   {
     char now = keypadScan();
-    //printf("%d\n", now);
+    // printf("%d\n", now);
     if (ch != now && now != ' ')
     {
       printf("%d\n", now);
